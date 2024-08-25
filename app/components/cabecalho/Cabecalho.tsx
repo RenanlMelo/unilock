@@ -80,17 +80,43 @@ export const Header = () => {
         <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
       </svg>
       {isOpen && (
-        <nav style={{ top: headerSize }} className={styles.mobileNavbar}>
-          {mobileNavbarItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              className={styles.mobileNavbarItem}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </nav>
+        <div className={styles.mobileDiv}>
+          <div className={styles.mobileFilter}>
+            <span />
+            <nav className={styles.mobileNavbar}>
+              <svg
+                onClick={handleToggle}
+                width="130"
+                height="30"
+                viewBox="0 0 130 130"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.13855 120.861L120.861 9.13846"
+                  stroke="white"
+                  stroke-width="17"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M9.13855 9.13843L120.861 120.861"
+                  stroke="white"
+                  stroke-width="17"
+                  stroke-linecap="round"
+                />
+              </svg>
+              {mobileNavbarItems.map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className={styles.mobileNavbarItem}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </div>
       )}
       <nav className={styles.navbar}>
         {navbarItems.map((item, index) => (

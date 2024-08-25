@@ -1,7 +1,10 @@
 "use client";
 import styles from "./toTop.module.scss";
+import { usePathname } from "next/navigation";
 
 export const ToTop = () => {
+  const currentPath = usePathname();
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -12,7 +15,12 @@ export const ToTop = () => {
   return (
     <>
       <div>
-        <a onClick={(e) => scrollToTop()} className={styles.goTop}>
+        <a
+          onClick={(e) => scrollToTop()}
+          className={`${styles.goTop} ${
+            currentPath === "/" || currentPath === "/contato" ? "hidden" : ""
+          }`}
+        >
           <svg
             width="126"
             height="162"

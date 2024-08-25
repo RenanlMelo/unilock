@@ -1,0 +1,8 @@
+.goTop {
+  @apply bg-[#242424] w-[calc(8vw+10px)] px-2 h-16 py-4 rounded-l-md fixed top-1/4 right-0 text-center flex justify-center items-center hover:bg-[#323232] hover:scale-105 duration-200 xl:hidden z-[60];
+
+  svg {
+    width: fit-content;
+    transform: translateX(1px);
+  }
+}

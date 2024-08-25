@@ -1,6 +1,6 @@
 /* - Header - */
 .header {
-  @apply grid grid-cols-4 justify-between items-center px-[3vw] py-[3vh] w-full z-50 fixed;
+  @apply grid grid-cols-4 justify-between items-center px-[3vw] py-[3vh] w-full z-[70] fixed;
 }
 
 .logo_div {
@@ -31,10 +31,23 @@
   @apply absolute block xl:hidden right-[20px];
 }
 
-.mobileNavbar {
-  @apply flex flex-col xl:hidden bg-black text-white/70 absolute right-0;
+// Mobile
+.mobileDiv {
+  @apply w-[100vw] h-full absolute;
 
-  .mobileNavbarItem {
-    @apply block xl:hidden text-[3.5vw] w-full h-full px-10  py-5 text-center tracking-widest  border-b border-white/20;
+  .mobileFilter {
+    @apply w-full h-[100vh] bg-black/50 absolute flex justify-end;
+
+    svg {
+      @apply w-8 absolute right-4 top-4;
+    }
+
+    .mobileNavbar {
+      @apply flex flex-col xl:hidden justify-self-end bg-black text-white/70 w-[70vw] h-[100vh] z-[110] pt-[4vh];
+
+      .mobileNavbarItem {
+        @apply block xl:hidden text-[4.5vw] w-[70%] px-10 py-2 text-start tracking-widest uppercase underline-offset-4 underline decoration-white/70 decoration-2;
+      }
+    }
   }
 }
