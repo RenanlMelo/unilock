@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-scroll": "^1.8.10",
     "framer-motion": "^11.3.30",
     "next": "14.2.6",
     "react": "^18",
