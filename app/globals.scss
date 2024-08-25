@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white-f: #fff;
+  --white-f-50: #ffffff50;
+  --black-0: #000;
+  --primary: #edae00;
+  --primary-darken: #b48400;
+
+  --text-f: #fff;
+  --text-primary: #ffc62a;
+  --text-dark1: #303040;
+  --text-dark2: #101015;
+
+  --header: #000;
+
+  /* Form */
+  --form-inputColor: #edae00;
+  --form-inputSelectedColor: rgb(10, 10, 10);
+  --form-selectText: #9ca3af;
+
+  --clr-1-red: 237;
+  --clr-1-green: 174;
+  --clr-1-blue: 0;
+  --clr-2-opacity: 0.05;
+  --clr-3-opacity: 0.01;
+  --clr-1: rgb(var(--clr-1-red), var(--clr-1-green), var(--clr-1-blue));
+  --clr-2: rgba(
+    var(--clr-1-red),
+    var(--clr-1-green),
+    var(--clr-1-blue),
+    var(--clr-2-opacity)
+  );
+  --clr-3: rgba(
+    var(--clr-1-red),
+    var(--clr-1-green),
+    var(--clr-1-blue),
+    var(--clr-3-opacity)
+  );
+}
+
+body {
+  background: url("/image_texture.png");
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+* {
+  scrollbar-width: 8px;
+  scrollbar-color: #323232 #0a0a0a;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #323232;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}

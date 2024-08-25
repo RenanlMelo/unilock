@@ -1,0 +1,131 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Sobre  */
+.sobre_section {
+  @apply text-[#000] w-full h-full flex flex-col justify-start items-center pt-16;
+
+  & .sobre_div_title {
+    @apply mt-[calc(10vh-50px)] mb-0 xl:my-[calc(10vh-50px)] w-full text-start px-16 xl:px-32;
+
+    h3 {
+      @apply text-[7vw] xl:text-[3vw] font-semibold text-[var(--text-dark1)] p-8 pl-0 pb-0;
+    }
+
+    h4 {
+      @apply text-[5vw] xl:text-[1.75vw] font-normal text-[var(--text-dark2)];
+    }
+  }
+}
+
+.sobre_div_content {
+  @apply w-full flex flex-col justify-center items-center;
+
+  .sobre_texto1 {
+    @apply h-full w-[calc(55%+50px)] text-[calc(.95vw+5px)] font-light flex flex-col xl:flex-row justify-center items-center pb-[7.5vh];
+
+    p {
+      @apply text-[3.5vw] xl:text-[1.15vw] rounded-xl p-0 py-4 xl:p-4 backdrop-blur;
+    }
+
+    .sobre_image {
+      @apply rounded-2xl shadow-[3px_5px_15px_#30003080];
+    }
+  }
+
+  .sobre_texto2 {
+    @apply h-full p-4 w-full xl:w-[calc(55%+50px)] font-light flex flex-col justify-center items-start backdrop-blur my-[10vh] px-[5vw] shadow-[inset_0_0_15px_#00000090] xl:rounded-3xl;
+
+    h4 {
+      @apply p-4 xl:p-8 text-[6vw] xl:text-[calc(2.35vw-12px)] font-medium;
+    }
+
+    ul {
+      @apply px-4 pt-0 pb-12 list-disc text-[4.25vw] xl:text-[calc(.95vw+5px)] font-light;
+
+      li {
+        @apply py-[1vh];
+      }
+    }
+  }
+}
+
+.sobre_dados_bg {
+  @apply w-full bg-[#101010] z-10;
+
+  .sobre_dados {
+    @apply flex flex-col xl:flex-row justify-center gap-x-36 items-center w-full my-[10vh] gap-y-16 xl:gap-y-0;
+
+    div {
+      @apply flex flex-col w-[60vw] justify-center items-center gap-y-4 text-[1.75vw] text-[var(--primary)] font-light;
+
+      .sobre_dado_span {
+        @apply rounded-sm w-[80%] xl:w-[13vw] aspect-square relative flex justify-center items-center bg-[#101010];
+
+        h5 {
+          @apply text-[9vw] xl:text-[2vw] text-[var(--primary-darken)];
+        }
+      }
+
+      p {
+        @apply text-[6vw] xl:text-[2vw] whitespace-nowrap;
+      }
+
+      div {
+        @apply bg-[var(--primary)] w-full h-px block xl:hidden;
+      }
+    }
+  }
+}
+
+.sobre_dado_span::before {
+  @apply absolute rounded;
+  content: "";
+  z-index: -1;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-1)
+  );
+  animation: spin 6s linear infinite;
+  filter: blur(10px);
+}
+
+// ANIMATIONS
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_negative {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    --gradient-angle: 0deg;
+  }
+
+  100% {
+    --gradient-angle: 360deg;
+  }
+}

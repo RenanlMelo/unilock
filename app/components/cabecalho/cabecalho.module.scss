@@ -1,0 +1,40 @@
+/* - Header - */
+.header {
+  @apply grid grid-cols-4 justify-between items-center px-[3vw] py-[3vh] w-full z-50 fixed;
+}
+
+.logo_div {
+  @apply flex justify-start items-center gap-x-3 cursor-pointer;
+}
+
+.logo {
+  @apply w-10 h-10;
+}
+
+.logo_title {
+  @apply text-xl text-white whitespace-nowrap;
+}
+
+.navbar {
+  @apply hidden xl:flex justify-center items-center gap-x-6 col-start-2 col-span-2;
+}
+
+.navItem {
+  @apply text-lg text-[var(--text-f)] 2xl:text-xl transition duration-100 after:block after:h-[2px] after:bg-[var(--text-f)] after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center after:translate-y-px;
+}
+
+.contactButton {
+  @apply hidden xl:block text-right text-xl font-bold text-[var(--text-f)] bg-[var(--primary)] hover:bg-[var(--primary-darken)] border-2 border-transparent hover:border-[var(--primary)] shadow-[1px_2px_5px_#00000060] hover:shadow-[1px_2px_10px_#00000080] w-fit place-self-end px-4 py-2 rounded-3xl duration-200;
+}
+
+.icon {
+  @apply absolute block xl:hidden right-[20px];
+}
+
+.mobileNavbar {
+  @apply flex flex-col xl:hidden bg-black text-white/70 absolute right-0;
+
+  .mobileNavbarItem {
+    @apply block xl:hidden text-[3.5vw] w-full h-full px-10  py-5 text-center tracking-widest  border-b border-white/20;
+  }
+}

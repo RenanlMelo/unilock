@@ -1,0 +1,36 @@
+/* Inicio */
+.inicio_div {
+  @apply w-full h-[100vh] relative overflow-clip;
+}
+
+.inicio_section {
+  @apply w-full h-[100vh] xl:p-40 overflow-hidden relative flex flex-col justify-center xl:justify-evenly items-center;
+}
+
+.inicio_background_image {
+  @apply h-full bg-cover bg-center bg-no-repeat absolute;
+}
+
+.inicio_filter {
+  @apply w-full h-full absolute aspect-video bg-blue-500/10 shadow-custom-double;
+}
+
+.inicio_title {
+  @apply text-[10vw] xl:text-[5vw] font-bold text-[var(--text-f)] drop-shadow-[0_0_2px_#000];
+}
+
+.inicio_subtitle {
+  @apply text-[9vw] xl:text-[3vw] font-semibold text-[var(--text-primary)] -translate-y-6 mx-auto text-center;
+}
+
+.inicio_buttons_div {
+  @apply w-full xl:w-auto flex flex-col justify-center items-center gap-y-10;
+}
+
+.inicio_button1 {
+  @apply bg-[var(--primary)] text-[5vw] xl:text-[1.1vw] flex justify-center items-center rounded-md w-4/5 xl:w-[calc(14vw+100px)] h-[calc(6vh+10px)] border border-transparent text-black hover:text-white hover:bg-[var(--primary-darken)] duration-300 shadow-[0_5px_15px_-7px_var(--primary)] hover:shadow-[0_5px_20px_0px_var(--primary)];
+}
+
+.inicio_button2 {
+  @apply border border-white/70 text-[5vw] xl:text-[1.1vw] flex justify-center items-center rounded-md w-4/5 xl:w-[calc(14vw+100px)] h-[calc(6vh+10px)] text-white/70 hover:text-[var(--text-f)] hover:border-[var(--white-f)] duration-300 shadow-[0_5px_30px_-5px_var(--white-f-70)] hover:shadow-[0_5px_20px_-7px_var(--white-f)];
+}
