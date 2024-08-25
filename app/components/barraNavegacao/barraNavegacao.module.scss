@@ -1,8 +1,0 @@
-// Mobile
-.mobileNavbar {
-  @apply flex flex-col xl:hidden bg-black text-white/70 absolute right-0 w-[70vw] z-[110];
-
-  .mobileNavbarItem {
-    @apply block xl:hidden text-[3.5vw] w-[70%] h-[100vh] px-10 py-2 text-center tracking-widest uppercase;
-  }
-}
