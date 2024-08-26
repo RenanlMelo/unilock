@@ -42,7 +42,7 @@ export const Servicos = () => {
       imagens: [{ imagem1: "/image_piso_grama.jpg" }],
       nomes: [
         {
-          nome1: "Piso Grama",
+          nome1: "Pisos Grama",
         },
       ],
       cores: [

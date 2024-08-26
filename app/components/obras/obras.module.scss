@@ -18,12 +18,24 @@
     @apply grid xl:grid-cols-4 gap-y-[2.5vh] xl:gap-y-0 justify-evenly items-center gap-x-[1vw] h-fit w-full px-16 xl:px-32 mt-12 xl:mt-0 xl:mb-12;
 
     button {
-      @apply w-full text-xl text-center py-3 px-6 border-2 hover:border-transparent hover:bg-black/90 hover:text-white duration-300;
+      @apply w-full font-bold text-[4.5vw] xl:text-[1.15vw] uppercase text-center py-3 px-6 border-4 hover:border-transparent hover:bg-black/90 hover:text-white duration-300;
     }
   }
 
   .obras_content {
     @apply w-full h-fit;
+
+    .obras_all_images_container {
+      @apply grid xl:grid-cols-4 row-auto gap-x-[4vw] gap-y-[4vh] py-[5vh] px-16 xl:px-32 mt-[5vh] justify-center items-center w-full h-fit bg-[#00000020];
+
+      div {
+        @apply bg-black/80 w-full aspect-square overflow-hidden rounded-2xl shadow-[0_5px_25px_#00000080] cursor-zoom-in;
+
+        img {
+          @apply bg-center w-full h-full scale-105;
+        }
+      }
+    }
 
     .obras_modelo_content {
       @apply grid xl:grid-cols-4 row-auto gap-x-[4vw] gap-y-[4vh] py-[5vh] px-16 xl:px-32 mt-[5vh] justify-center items-center w-full h-fit bg-[#00000020];

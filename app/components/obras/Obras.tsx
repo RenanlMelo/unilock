@@ -8,28 +8,28 @@ export const Obras = () => {
   const [active, setActive] = useState(-1);
 
   const handleChange = (index: number) => {
-    const buttons = document.getElementsByClassName("button");
-
-    if (buttons.length > 0) {
-      for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove("active");
-      }
-
-      if (buttons[index]) {
-        buttons[index].classList.add("active");
-      } else if (active == -1) {
-        for (let i = 0; i < buttons.length; i++) {
-          buttons[i].classList.add("active");
-        }
-      }
+    if (active === index) {
+      setActive(-1);
+    } else {
+      setActive(index); // Atualiza o valor de active
     }
-
-    setActive(index);
   };
 
   const var_dictModelos = [
     {
-      modelo: "Piso Intertravados",
+      modelo: "Guias e Sarjetas",
+      imagens: ["/guia/Piso1.jpg"],
+    },
+    {
+      modelo: "Pisos Grama",
+      imagens: ["/grama/Piso1.jpg"],
+    },
+    {
+      modelo: "Pisos Drenante",
+      imagens: ["/drenante/Piso1.jpg"],
+    },
+    {
+      modelo: "Pisos Intertravados",
       imagens: [
         "/intertravados/Piso1.jpg",
         "/intertravados/Piso2.jpg",
@@ -39,30 +39,14 @@ export const Obras = () => {
         "/intertravados/Piso6.jpg",
         "/intertravados/Piso7.jpg",
       ],
-      nomes: ["10x20", "16 faces", "20x20"],
-    },
-    {
-      modelo: "Piso Grama",
-      imagens: ["/grama/Piso1.jpg"],
-      nomes: ["Piso Grama"],
-    },
-    {
-      modelo: "Guias e Sarjetas",
-      imagens: ["/guia/Piso1.jpg"],
-      nomes: ["Guias", "Sarjeta"],
-    },
-    {
-      modelo: "Piso Drenante",
-      imagens: ["/drenante/Piso1.jpg"],
-      nomes: ["Piso Drenante"],
     },
   ];
 
   const var_listButtons = [
-    { clsName: "Piso Intertravados" },
-    { clsName: "Piso Grama" },
+    { clsName: "Pisos Intertravados" },
+    { clsName: "Pisos Grama" },
     { clsName: "Guias e Sarjetas" },
-    { clsName: "Piso Drenante" },
+    { clsName: "Pisos Drenante" },
   ];
 
   return (
@@ -87,16 +71,34 @@ export const Obras = () => {
         ))}
       </div>
       <div className={styles.obras_content}>
-        {var_dictModelos.map(
-          (obra, index) =>
-            active === index && (
-              <div
-                key={index}
-                onClick={() => console.log("INDEX", index)}
-                className={styles.obras_modelo_content}
-              >
+        {active === -1 ? (
+          <div className={styles.obras_all_images_container}>
+            {var_dictModelos.flatMap((obra, index) =>
+              obra.imagens.map((imgSrc, subImgIndex) => (
+                <div
+                  key={`${index}-${subImgIndex}`}
+                  className={styles.obras_image_container}
+                >
+                  <Image
+                    src={imgSrc}
+                    alt={imgSrc}
+                    width={500}
+                    height={500}
+                    className="w-full h-full bg-contain bg-center"
+                  />
+                </div>
+              ))
+            )}
+          </div>
+        ) : (
+          var_dictModelos.map((obra, index) =>
+            active === index ? (
+              <div key={index} className={styles.obras_modelo_content}>
                 {obra.imagens.map((imgSrc, subImgIndex) => (
-                  <div key={subImgIndex}>
+                  <div
+                    key={subImgIndex}
+                    className={styles.obras_image_container}
+                  >
                     <Image
                       src={imgSrc}
                       alt={imgSrc}
@@ -107,7 +109,8 @@ export const Obras = () => {
                   </div>
                 ))}
               </div>
-            )
+            ) : null
+          )
         )}
       </div>
     </section>
