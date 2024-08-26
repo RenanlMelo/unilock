@@ -17,18 +17,6 @@ export const Obras = () => {
 
   const var_dictModelos = [
     {
-      modelo: "Guias e Sarjetas",
-      imagens: ["/guia/Piso1.jpg"],
-    },
-    {
-      modelo: "Pisos Grama",
-      imagens: ["/grama/Piso1.jpg"],
-    },
-    {
-      modelo: "Pisos Drenante",
-      imagens: ["/drenante/Piso1.jpg"],
-    },
-    {
       modelo: "Pisos Intertravados",
       imagens: [
         "/intertravados/Piso1.jpg",
@@ -39,6 +27,18 @@ export const Obras = () => {
         "/intertravados/Piso6.jpg",
         "/intertravados/Piso7.jpg",
       ],
+    },
+    {
+      modelo: "Pisos Grama",
+      imagens: ["/grama/Piso1.jpg"],
+    },
+    {
+      modelo: "Guias e Sarjetas",
+      imagens: ["/guia/Piso1.jpg"],
+    },
+    {
+      modelo: "Pisos Drenante",
+      imagens: ["/drenante/Piso1.jpg"],
     },
   ];
 
