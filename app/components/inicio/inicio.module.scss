@@ -28,9 +28,9 @@
 }
 
 .inicio_button1 {
-  @apply bg-[var(--primary)] text-[5vw] xl:text-[1.1vw] flex justify-center items-center rounded-md w-4/5 xl:w-[calc(14vw+100px)] h-[calc(6vh+10px)] border border-transparent text-black hover:text-white hover:bg-[var(--primary-darken)] duration-300 shadow-[0_5px_15px_-7px_var(--primary)] hover:shadow-[0_5px_20px_0px_var(--primary)];
+  @apply bg-[var(--primary)] text-[5vw] xl:text-[1.1vw] flex justify-center items-center rounded-md w-4/5 xl:w-[calc(14vw+100px)] h-[calc(6vh+10px)] border border-transparent text-black hover:text-white hover:bg-[var(--primary)] duration-500 shadow-[0_5px_15px_-7px_var(--primary)] hover:shadow-link;
 }
 
 .inicio_button2 {
-  @apply border border-white/70 text-[5vw] xl:text-[1.1vw] flex justify-center items-center rounded-md w-4/5 xl:w-[calc(14vw+100px)] h-[calc(6vh+10px)] text-white/70 hover:text-[var(--text-f)] hover:border-[var(--white-f)] duration-300 shadow-[0_5px_30px_-5px_var(--white-f-70)] hover:shadow-[0_5px_20px_-7px_var(--white-f)];
+  @apply border border-white/70 text-[5vw] xl:text-[1.1vw] flex justify-center items-center rounded-md w-4/5 xl:w-[calc(14vw+100px)] h-[calc(6vh+10px)] text-white/70 hover:text-[var(--text-f)] hover:border-[var(--white-f)] duration-500 shadow-[0_5px_30px_-5px_var(--white-f-70)] hover:shadow-[0_5px_20px_-7px_var(--white-f)];
 }

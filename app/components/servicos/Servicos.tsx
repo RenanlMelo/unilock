@@ -131,10 +131,10 @@ export const Servicos = () => {
                 <span>
                   Cores Disponíveis
                   {item.cores.map((colour, colourIndex) =>
-                    Object.values(colour).map((colourStr) =>
+                    Object.values(colour).map((colourStr, clrIndex) =>
                       colourStr ? (
                         <div
-                          key={`${colourStr}`}
+                          key={`${item.modelo + clrIndex}`}
                           className={`${styles.servicos_availableColour} ${colourStr}`}
                         />
                       ) : null

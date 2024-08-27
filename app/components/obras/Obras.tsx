@@ -8,11 +8,7 @@ export const Obras = () => {
   const [active, setActive] = useState(-1);
 
   const handleChange = (index: number) => {
-    if (active === index) {
-      setActive(-1);
-    } else {
-      setActive(index); // Atualiza o valor de active
-    }
+    setActive(index);
   };
 
   const var_dictModelos = [
@@ -61,20 +57,26 @@ export const Obras = () => {
             key={index}
             onClick={() => handleChange(index)}
             className={`${styles.obras_span} ${
-              index === active
-                ? "bg-black/90 text-white border-transparent"
-                : "bg-transparent border-black/90"
+              index === active ? `${styles.active}` : `${styles.inactive}`
             }`}
           >
             {btn.clsName}
           </button>
         ))}
+        <p
+          onClick={() => {
+            handleChange(-1);
+          }}
+          className={styles.filtro}
+        >
+          Limpar filtro
+        </p>
       </div>
       <div className={styles.obras_content}>
         {active === -1 ? (
           <div className={styles.obras_all_images_container}>
             {var_dictModelos.flatMap((obra, index) =>
-              obra.imagens.map((imgSrc, subImgIndex) => (
+              obra.imagens.reverse().map((imgSrc, subImgIndex) => (
                 <div
                   key={`${index}-${subImgIndex}`}
                   className={styles.obras_image_container}

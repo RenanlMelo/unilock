@@ -26,7 +26,7 @@
     @apply text-[4vwq] xl:text-[1.05vw] text-white max-w-full whitespace-nowrap;
 
     strong {
-      @apply text-[#101010];
+      @apply text-[#101010] xl:text-[var(--primary)];
     }
   }
 

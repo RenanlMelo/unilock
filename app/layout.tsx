@@ -3,6 +3,7 @@ import { Poppins, Roboto } from "next/font/google";
 import "./globals.scss";
 import { Midia } from "./components/midia/Midia";
 import { ToTop } from "./components/pTopo/ToTop";
+import { Footer } from "./components/footer/Footer";
 
 const mainFontFamily = Roboto({
   weight: ["100", "300", "500", "700", "900"],
@@ -25,6 +26,7 @@ export default function RootLayout({
         {children}
         <ToTop />
         <Midia />
+        <Footer />
       </body>
     </html>
   );

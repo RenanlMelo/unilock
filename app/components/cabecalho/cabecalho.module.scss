@@ -46,7 +46,7 @@
       @apply flex flex-col xl:hidden justify-self-end bg-black text-white/70 w-[70vw] h-[100vh] z-[110] pt-[4vh];
 
       .mobileNavbarItem {
-        @apply block xl:hidden text-[4.5vw] w-[70%] px-10 py-2 text-start tracking-widest uppercase underline-offset-4 underline decoration-white/70 decoration-2;
+        @apply block xl:hidden text-[4.5vw] w-[70%] px-10 py-2 text-start tracking-widest uppercase underline-offset-4 underline decoration-2;
       }
     }
   }

@@ -95,13 +95,13 @@ export const Header = () => {
                 <path
                   d="M9.13855 120.861L120.861 9.13846"
                   stroke="white"
-                  stroke-width="17"
+                  strokeWidth="17"
                   stroke-linecap="round"
                 />
                 <path
                   d="M9.13855 9.13843L120.861 120.861"
                   stroke="white"
-                  stroke-width="17"
+                  strokeWidth="17"
                   stroke-linecap="round"
                 />
               </svg>
@@ -109,7 +109,11 @@ export const Header = () => {
                 <Link
                   key={index}
                   href={item.href}
-                  className={styles.mobileNavbarItem}
+                  className={`${
+                    currentPath === "/" + item.id
+                      ? "text-[var(--primary-darken)] decoration-[var(--primary-darken)]"
+                      : "decoration-white/70"
+                  } ${styles.mobileNavbarItem}`}
                 >
                   {item.name}
                 </Link>

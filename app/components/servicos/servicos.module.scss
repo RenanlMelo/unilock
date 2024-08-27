@@ -25,7 +25,7 @@
       @apply w-full xl:w-[calc(100%-200px)] h-fit grid grid-cols-1 xl:grid-cols-2 grid-rows-4 xl:grid-rows-2 justify-center items-center gap-y-[5vh] xl:gap-y-[10vh] py-10;
 
       .servicos_span {
-        @apply bg-[#202020ee] xl:bg-[#202020] cursor-pointer w-full xl:w-[75%] h-[10vh] xl:h-[calc(14vh+50px)] text-[var(--text-primary)] flex items-center text-[4vw] xl:text-[2vw] rounded-md xl:rounded-none;
+        @apply bg-[#202020ee] xl:bg-[#202020] cursor-pointer w-full xl:w-[75%] h-[10vh] xl:h-[calc(14vh+50px)] text-[var(--text-primary)] flex items-center text-[4.5vw] xl:text-[2vw] rounded-md xl:rounded-none;
       }
 
       .servicos_div_tipo:nth-child(even) {
