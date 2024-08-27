@@ -1,6 +1,6 @@
 /* Contato */
 .contato_section {
-  @apply bg-transparent xl:bg-transparent flex flex-col xl:flex-row justify-center items-center overflow-hidden relative h-full xl:h-[100vh];
+  @apply bg-transparent xl:bg-transparent flex flex-col xl:flex-row justify-center items-center overflow-hidden relative h-full;
 }
 
 .contato_bg_image {
@@ -12,7 +12,7 @@
 }
 
 .contato_content {
-  @apply flex flex-col xl:grid xl:grid-cols-2 my-[7.5vh] xl:my-[10vh] justify-center items-center xl:w-[70vw];
+  @apply flex flex-col xl:grid xl:grid-cols-2 my-[7.5vh] xl:my-[15vh] justify-center items-center xl:w-[70vw];
 }
 
 .contato_informations {
@@ -26,7 +26,7 @@
     @apply text-[4vwq] xl:text-[1.05vw] text-white max-w-full whitespace-nowrap;
 
     strong {
-      @apply text-[var(--text-primary)];
+      @apply text-[#101010];
     }
   }
 
@@ -74,5 +74,5 @@
 }
 
 .contato_submit {
-  @apply bg-[var(--primary)] w-[calc(100%-100px)] min-w-[200px] xl:min-w-[400px] px-4 py-[calc(1.25vh+5px)] rounded-lg hover:text-[var(--primary)] hover:bg-[#101010] duration-500;
+  @apply bg-[var(--primary)]  w-[calc(100%-100px)] min-w-[200px] xl:min-w-[400px] px-4 py-[calc(1.25vh+5px)] rounded-lg hover:text-[var(--primary)] hover:bg-[#101010] duration-500 uppercase font-bold tracking-wider;
 }
