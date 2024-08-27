@@ -57,10 +57,10 @@ export const Form = () => {
                   Telefone: <strong>(15) 99856-8080</strong>
                 </p>
               </div>
-              <span>
+              <h4>
                 Entre em contato conosco pelas redes sociais ou pelo formulário
                 ao lado.
-              </span>
+              </h4>
               <div className={styles.contato_midia}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
