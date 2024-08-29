@@ -96,13 +96,13 @@ export const Header = () => {
                   d="M9.13855 120.861L120.861 9.13846"
                   stroke="white"
                   strokeWidth="17"
-                  stroke-linecap="round"
+                  strokeLinecap="round"
                 />
                 <path
                   d="M9.13855 9.13843L120.861 120.861"
                   stroke="white"
                   strokeWidth="17"
-                  stroke-linecap="round"
+                  strokeLinecap="round"
                 />
               </svg>
               {mobileNavbarItems.map((item, index) => (

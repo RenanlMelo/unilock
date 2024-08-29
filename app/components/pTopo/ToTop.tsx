@@ -15,7 +15,7 @@ export const ToTop = () => {
   return (
     <>
       <div>
-        <a
+        <span
           onClick={(e) => scrollToTop()}
           className={`${styles.goTop} ${
             currentPath === "/" || currentPath === "/contato" ? "hidden" : ""
@@ -33,7 +33,7 @@ export const ToTop = () => {
               fill="white"
             />
           </svg>
-        </a>
+        </span>
       </div>
     </>
   );

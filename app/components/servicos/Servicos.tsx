@@ -128,13 +128,13 @@ export const Servicos = () => {
             >
               <div className={styles.servicos_modelo_item}>
                 <h4>{item.modelo}</h4>
-                <span>
+                <span key={item.modelo + index}>
                   Cores Disponíveis
                   {item.cores.map((colour, colourIndex) =>
                     Object.values(colour).map((colourStr, clrIndex) =>
                       colourStr ? (
                         <div
-                          key={`${item.modelo + clrIndex}`}
+                          id={`${item.modelo.length * colourStr.length}`}
                           className={`${styles.servicos_availableColour} ${colourStr}`}
                         />
                       ) : null
@@ -166,7 +166,6 @@ export const Servicos = () => {
                   )}
                 </div>
               </div>
-              {/* <div className={styles.servicos_division} /> */}
               <div className={styles.servicos_division_2} />
             </div>
           ))}
