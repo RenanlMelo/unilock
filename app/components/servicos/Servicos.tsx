@@ -134,7 +134,7 @@ export const Servicos = () => {
                     Object.values(colour).map((colourStr, clrIndex) =>
                       colourStr ? (
                         <div
-                          id={`${item.modelo.length * colourStr.length}`}
+                          key={`${item.modelo.length * colourStr.length}`}
                           className={`${styles.servicos_availableColour} ${colourStr}`}
                         />
                       ) : null
