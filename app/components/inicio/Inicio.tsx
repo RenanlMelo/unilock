@@ -14,7 +14,14 @@ export const Inicio = () => {
           height={1080}
           className={styles.inicio_background_image}
           loading="eager"
-          priority={true}
+        />
+        <Image
+          src="/image_inicio_bgMobile.jpeg"
+          alt="background image"
+          width={1920}
+          height={1080}
+          className={styles.inicio_backgroundMobile_image}
+          loading="eager"
         />
         <span className={styles.inicio_filter} />
         <div className={styles.inicio_shadow} />

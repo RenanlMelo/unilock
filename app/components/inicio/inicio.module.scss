@@ -8,7 +8,11 @@
 }
 
 .inicio_background_image {
-  @apply h-full bg-cover bg-center bg-no-repeat absolute;
+  @apply h-full bg-cover hidden xl:inline bg-center bg-no-repeat absolute;
+}
+
+.inicio_backgroundMobile_image {
+  @apply absolute h-full xl:hidden;
 }
 
 .inicio_filter {

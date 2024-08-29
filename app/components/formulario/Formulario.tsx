@@ -47,12 +47,7 @@ export const Form = () => {
               <div>
                 <h3>Unilock Pisos Intertravados</h3>
                 <p>Sorocaba e Região</p>
-                <p>
-                  E-mail: {/* <a href="mailto:renanlaramelo@gmail.com"> */}
-                  <a href="mailto:contato@unilockpisos.com.br">
-                    <strong>contato@unilockpisos.com.br</strong>
-                  </a>
-                </p>
+
                 <p>
                   Telefone: <strong>(15) 99856-8080</strong>
                 </p>
