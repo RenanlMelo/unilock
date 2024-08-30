@@ -3,8 +3,8 @@ import { Servicos } from "../components/servicos/Servicos";
 import { ToTop } from "../components/pTopo/ToTop";
 
 export const metadata = {
-  title: "Unilock Pisos - Serviços",
-  description: "Página com os serviços, modelos e cores dos pisos disponíveis.",
+  title: "Unilock Pisos | Serviços | Página com modelos, cores e serviços",
+  description: "Página com os serviços, modelos e cores dos pisos disponíveis",
 };
 
 export default function page() {
