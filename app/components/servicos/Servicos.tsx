@@ -88,8 +88,8 @@ export const Servicos = () => {
     <>
       <section className={styles.servicos_section}>
         <div className={styles.servicos_title_div}>
-          <h3>Serviços Oferecidos</h3>
-          <h4>Conheça mais sobre nossos modelos</h4>
+          <h1>Serviços Oferecidos</h1>
+          <h2>Conheça mais sobre nossos modelos</h2>
         </div>
         <div className={styles.servicos_introduction}>
           <Image
@@ -127,7 +127,7 @@ export const Servicos = () => {
               style={{ gridRowStart: `${index + 1}` }}
             >
               <div className={styles.servicos_modelo_item}>
-                <h4>{item.modelo}</h4>
+                <h3>{item.modelo}</h3>
                 <span key={item.modelo + index}>
                   Cores Disponíveis
                   {item.cores.map((colour, colourIndex) =>

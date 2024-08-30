@@ -7,8 +7,8 @@ export const About = () => {
     <>
       <section className={styles.sobre_section}>
         <div className={styles.sobre_div_title}>
-          <h3>Sobre Nós</h3>
-          <h4>Conheça mais sobre a nossa história</h4>
+          <h1>Sobre Nós</h1>
+          <h2>Conheça mais sobre a nossa história</h2>
         </div>
         <div className={styles.sobre_div_content}>
           <div className={styles.sobre_texto1}>
@@ -35,10 +35,10 @@ export const About = () => {
           <Dados />
 
           <div className={styles.sobre_texto2}>
-            <h4>
+            <h3>
               Se você está pensando em construir ou reformar, não deixe de nos
               consultar.
-            </h4>
+            </h3>
             <ul>
               <li>
                 Nossos profissionais são altamente qualificados para realizar

@@ -48,8 +48,8 @@ export const Obras = () => {
   return (
     <section className={styles.obras_section}>
       <div className={styles.obras_div_title}>
-        <h3>Obras</h3>
-        <h4>Veja algumas de nossas obras</h4>
+        <h1>Obras</h1>
+        <h2>Veja algumas de nossas obras</h2>
       </div>
       <div className={styles.obras_modelos}>
         {var_listButtons.map((btn, index) => (

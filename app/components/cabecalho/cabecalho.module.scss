@@ -24,7 +24,7 @@
 }
 
 .contactButton {
-  @apply hidden xl:block text-right text-xl font-bold text-[var(--text-f)] bg-[var(--primary)] hover:bg-[var(--primary-darken)] border-2 border-transparent hover:border-[var(--primary)] shadow-[1px_2px_5px_#00000060] hover:shadow-[1px_2px_10px_#00000080] w-fit place-self-end px-4 py-2 rounded-3xl duration-200;
+  @apply hidden xl:block text-right text-xl font-bold text-[var(--text-dark2)] bg-[var(--primary)] hover:bg-[var(--primary-darken)] border-2 border-transparent hover:border-[var(--primary)] shadow-[1px_2px_5px_#00000060] hover:shadow-[1px_2px_10px_#00000080] w-fit place-self-end px-4 py-2 rounded-3xl duration-200;
 }
 
 .icon {

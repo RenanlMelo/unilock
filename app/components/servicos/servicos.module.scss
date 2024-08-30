@@ -5,11 +5,11 @@
   .servicos_title_div {
     @apply mt-[calc(10vh-50px)] mb-0 xl:my-[calc(10vh-50px)] w-full text-start xl:px-32;
 
-    h3 {
+    h1 {
       @apply text-[7vw] whitespace-nowrap xl:text-[3vw] font-semibold text-[var(--text-dark1)] w-fit p-8 pl-0 pb-0;
     }
 
-    h4 {
+    h2 {
       @apply text-[5vw] xl:text-[1.75vw] text-[var(--text-dark2)] w-fit;
     }
   }

@@ -11,11 +11,11 @@
   & .sobre_div_title {
     @apply mt-[calc(10vh-50px)] mb-0 xl:my-[calc(10vh-50px)] w-full text-start px-16 xl:px-32;
 
-    h3 {
+    h1 {
       @apply text-[7vw] xl:text-[3vw] font-semibold text-[var(--text-dark1)] p-8 pl-0 pb-0;
     }
 
-    h4 {
+    h2 {
       @apply text-[5vw] xl:text-[1.75vw] font-normal text-[var(--text-dark2)];
     }
   }
@@ -39,7 +39,7 @@
   .sobre_texto2 {
     @apply h-full p-4 w-full xl:w-[calc(55%+50px)] font-light flex flex-col justify-center items-start backdrop-blur my-[10vh] px-[5vw] shadow-[inset_0_0_15px_#00000090] xl:rounded-3xl;
 
-    h4 {
+    h3 {
       @apply p-4 xl:p-8 text-[6vw] xl:text-[calc(2.35vw-12px)] font-medium;
     }
 

@@ -64,7 +64,7 @@ export const Header = () => {
           height={200}
           className={styles.logo}
         />
-        <h1 className={styles.logo_title}>Unilock Pisos</h1>
+        <a className={styles.logo_title}>Unilock Pisos</a>
       </Link>
       <svg
         xmlns="http://www.w3.org/2000/svg"
