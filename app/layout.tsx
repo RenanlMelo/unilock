@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" type="image/x-icon" href="/favicon.png" />
       <body className={mainFontFamily.className}>
         {children}
         <ToTop />
