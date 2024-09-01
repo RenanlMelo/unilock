@@ -24,10 +24,14 @@
 
   & h2 {
     @apply text-[4vwq] xl:text-[1.05vw] text-white max-w-full;
+  }
 
-    strong {
-      @apply text-[#101010] xl:text-[var(--primary)];
-    }
+  p {
+    @apply text-[white];
+  }
+
+  strong {
+    @apply text-[#101010] xl:text-[var(--primary)];
   }
 
   h3 {

@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import styles from "./cabecalho.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 
 export const Header = () => {
   const currentPath = usePathname();
+  const router = useRouter();
 
   const navbarItems = [
     { name: "Início", id: "inicio", href: "/" },
@@ -47,16 +48,39 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+
+    return () => {
+      document.body.style.overflow = "visible"; // Garantir que o overflow seja restaurado
+    };
+  }, [isOpen]);
+
+  const [loadingItem, setLoadingItem] = useState<string | null>(null);
+
+  const handleLoading = (id: string, href: string) => {
+    if (currentPath != "/" + href) setLoadingItem(id);
+    else setIsOpen(false);
+  };
+
+  useEffect(() => {
+    setLoadingItem(null);
+  }, []);
 
   return (
     <header
       className={`${styles.header} ${
-        currentPath === "/" ? "bg-transparent" : "bg-[#101010]"
+        currentPath === "/" ? "bg-transparent" : "bg-[#242424]"
       }`}
     >
-      <Link href="/" className={styles.logo_div}>
+      <a href="/" className={styles.logo_div}>
         <Image
           src="/image_main_logo.png"
           alt="logo"
@@ -64,8 +88,8 @@ export const Header = () => {
           height={200}
           className={styles.logo}
         />
-        <a className={styles.logo_title}>Unilock Pisos</a>
-      </Link>
+        <p className={styles.logo_title}>Unilock Pisos</p>
+      </a>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -105,26 +129,31 @@ export const Header = () => {
                   strokeLinecap="round"
                 />
               </svg>
-              {mobileNavbarItems.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className={`${
-                    currentPath === "/" + item.id
-                      ? "text-[var(--primary-darken)] decoration-[var(--primary-darken)]"
-                      : "decoration-white/70"
-                  } ${styles.mobileNavbarItem}`}
-                >
-                  {item.name}
-                </Link>
+              {mobileNavbarItems.map((item) => (
+                <div key={item.id} className={styles.mobileNavbarItem}>
+                  <Link
+                    href={item.href}
+                    onClick={() => handleLoading(item.id, item.href)}
+                    className={`${
+                      currentPath === "/" + item.id
+                        ? "text-[var(--primary-darken)] decoration-[var(--primary-darken)]"
+                        : "decoration-white/70"
+                    } ${styles.tese}`}
+                  >
+                    {item.name}
+                  </Link>
+                  {loadingItem === item.id && (
+                    <span className={styles.loadingIcon} />
+                  )}
+                </div>
               ))}
             </nav>
           </div>
         </div>
       )}
       <nav className={styles.navbar}>
-        {navbarItems.map((item, index) => (
-          <Link key={index} href={item.href} className={styles.navItem}>
+        {navbarItems.map((item) => (
+          <Link key={item.id} href={item.href} className={styles.navItem}>
             {item.name}
           </Link>
         ))}

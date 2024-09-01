@@ -49,7 +49,8 @@ export const Form = () => {
                 <h2>Sorocaba e Região</h2>
                 <p>
                   <a href="mailto:contato@unilockpisos.com.br">
-                    <strong>contato@unilockpisos.com.br</strong>
+                    Contato:
+                    <strong> contato@unilockpisos.com.br</strong>
                   </a>
                 </p>
                 <p>

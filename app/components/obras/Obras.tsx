@@ -63,14 +63,6 @@ export const Obras = () => {
             {btn.clsName}
           </button>
         ))}
-        <p
-          onClick={() => {
-            handleChange(-1);
-          }}
-          className={styles.filtro}
-        >
-          Limpar filtro
-        </p>
       </div>
       <div className={styles.obras_content}>
         {active === -1 ? (
