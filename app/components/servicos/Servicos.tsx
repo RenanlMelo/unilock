@@ -17,9 +17,9 @@ export const Servicos = () => {
       modelo: "Pisos Intertravados",
       imagens: [
         {
-          imagem1: "/image_intertravado1.jpg",
-          imagem2: "/image_intertravado2.jpg",
-          imagem3: "/image_intertravado2.jpg",
+          imagem1: "/intertravado/22.jpeg",
+          imagem2: "/intertravado/57.jpg",
+          imagem3: "/intertravado/64.jpg",
         },
       ],
       nomes: [
@@ -57,8 +57,8 @@ export const Servicos = () => {
       modelo: "Guias e Sarjetas",
       imagens: [
         {
-          imagem1: "/image_intertravado1.jpg",
-          imagem2: "/image_intertravado1.jpg",
+          imagem1: "/guia/1.jpeg",
+          imagem2: "/guia/3.jpeg",
         },
       ],
       nomes: [{ nome1: "Guias", nome2: "Sarjeta" }],
@@ -72,7 +72,7 @@ export const Servicos = () => {
     },
     {
       modelo: "Pisos Drenante",
-      imagens: [{ imagem1: "/image_intertravado1.jpg" }],
+      imagens: [{ imagem1: "/drenante/1.jpg" }],
       nomes: [{ nome1: "Piso Drenante" }],
       cores: [
         {

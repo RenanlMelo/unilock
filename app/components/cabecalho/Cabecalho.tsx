@@ -88,7 +88,7 @@ export const Header = () => {
           height={200}
           className={styles.logo}
         />
-        <p className={styles.logo_title}>Unilock Pisos</p>
+        <p className={styles.logo_title}>Unilock Pisos Intertravados</p>
       </a>
       <svg
         xmlns="http://www.w3.org/2000/svg"

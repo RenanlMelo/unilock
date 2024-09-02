@@ -66,7 +66,7 @@
 }
 
 .contato_form {
-  @apply min-w-[calc(400px+5vw)] text-lg xl:translate-y-10 flex flex-col gap-y-[5vh] justify-center items-center rounded-r-2xl xl:py-[10vh] px-[2vw] z-10 border border-transparent xl:border-black/50 border-l-0 xl:backdrop-blur;
+  @apply min-w-[calc(400px+5vw)] text-lg xl:translate-y-10 flex flex-col gap-y-[2.5vh] justify-center items-center rounded-r-2xl xl:py-[10vh] px-[2vw] z-10 border border-transparent xl:border-black/50 border-l-0 xl:backdrop-blur;
 }
 
 .contato_form input {

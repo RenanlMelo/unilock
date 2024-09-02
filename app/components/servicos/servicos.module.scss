@@ -1,6 +1,6 @@
 /* Serviços */
 .servicos_section {
-  @apply w-full flex flex-col justify-evenly items-center px-16 xl:px-0 py-16;
+  @apply w-full flex flex-col justify-evenly items-center px-14 xl:px-0 py-16;
 
   .servicos_title_div {
     @apply mt-[calc(10vh-50px)] mb-0 xl:my-[calc(10vh-50px)] w-full text-start xl:px-32;
@@ -25,7 +25,7 @@
       @apply w-full xl:w-[calc(100%-200px)] h-fit grid grid-cols-1 xl:grid-cols-2 grid-rows-4 xl:grid-rows-2 justify-center items-center gap-y-[5vh] xl:gap-y-[10vh] py-10;
 
       .servicos_span {
-        @apply bg-[#202020ee] xl:bg-[#202020] cursor-pointer w-full xl:w-[75%] h-[10vh] xl:h-[calc(14vh+50px)] text-[var(--text-primary)] flex items-center text-[4.5vw] xl:text-[2vw] rounded-md xl:rounded-none;
+        @apply bg-[#202020ee] xl:bg-[#202020] cursor-pointer w-full xl:w-[75%] h-[10vh] xl:h-[calc(14vh+50px)] text-[var(--text-primary)] flex items-center text-[4.75vw] xl:text-[2vw] rounded-md xl:rounded-none;
       }
 
       .servicos_div_tipo:nth-child(even) {
@@ -58,7 +58,7 @@
         @apply mb-[5vh];
       }
 
-      h4 {
+      h3 {
         @apply text-[6.5vw] xl:text-[calc(1.75vw+10px)] text-center;
       }
 
@@ -67,7 +67,7 @@
       }
 
       .servicos_availableColour {
-        @apply rounded-full flex m-0 w-8 aspect-square;
+        @apply flex m-0 w-8 aspect-square -translate-y-[1px];
       }
 
       .servicos_modelo_images {
@@ -82,7 +82,7 @@
         }
 
         img {
-          @apply w-full xl:w-1/4 aspect-square rounded-full shadow-[3px_4px_30px_#10001060];
+          @apply w-full xl:w-1/4 aspect-square rounded-md shadow-[3px_4px_30px_#10001060];
           transition: 0.35s all;
         }
 
