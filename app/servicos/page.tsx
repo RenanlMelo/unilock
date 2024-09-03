@@ -1,6 +1,6 @@
-import { Header } from "../components/cabecalho/Cabecalho";
-import { Servicos } from "../components/servicos/Servicos";
-import { ToTop } from "../components/pTopo/ToTop";
+import { Header } from "../../components/cabecalho/Cabecalho";
+import { Servicos } from "../../components/servicos/Servicos";
+import { ToTop } from "../../components/pTopo/ToTop";
 
 export const metadata = {
   title: "Unilock Pisos | Serviços | Página com modelos, cores e serviços",

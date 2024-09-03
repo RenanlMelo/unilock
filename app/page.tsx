@@ -1,5 +1,5 @@
-import { Header } from "./components/cabecalho/Cabecalho";
-import { Inicio } from "./components/inicio/Inicio";
+import { Header } from "../components/cabecalho/Cabecalho";
+import { Inicio } from "../components/inicio/Inicio";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
-import { Header } from "../components/cabecalho/Cabecalho";
-import { Form } from "../components/formulario/Formulario";
+import { Header } from "../../components/cabecalho/Cabecalho";
+import { Form } from "../../components/formulario/Formulario";
 
 export const metadata = {
   title: "",

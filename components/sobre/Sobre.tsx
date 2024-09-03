@@ -15,7 +15,7 @@ export const About = () => {
             <div>
               <p>
                 A Unilock Pisos está a 23 anos no mercado de instalações de
-                pisos intertravados, 10 anos no Sul da Florida (EUA) e agora 13
+                pisos intertravados, 10 anos no Sul da Flórida (EUA) e agora 13
                 anos no Brasil se tornando a maior e mais importante deste
                 setor, agora localizada em Sorocaba e atendendo toda região,
                 pretendemos manter a mesma qualidade nas instalações de pisos
