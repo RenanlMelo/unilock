@@ -55,7 +55,7 @@
       @apply w-full h-fit flex flex-col justify-center items-center relative;
 
       .servicos_modelo_item {
-        @apply mb-[5vh] flex flex-col justify-center items-center;
+        @apply my-[2vh] xl:mb-[5vh] flex flex-col justify-center items-center;
       }
 
       h3 {
@@ -67,7 +67,7 @@
       }
 
       span {
-        @apply flex justify-evenly items-center w-fit text-[4vw] xl:text-[1.5vw] gap-x-4 px-[2vw] py-[2vh] bg-[#202020] rounded;
+        @apply flex justify-evenly items-center w-fit text-[4vw] xl:text-[1.5vw] gap-x-4 px-[4vw] xl:px-[2vw] py-[2vh] bg-black rounded;
       }
 
       .servicos_availableColour {
@@ -81,7 +81,7 @@
           @apply w-full h-full flex flex-col justify-evenly items-center;
 
           img {
-            @apply w-full aspect-square;
+            @apply w-full h-full aspect-square;
           }
 
           p {

@@ -34,8 +34,8 @@ export const Servicos = () => {
           cor1: "#7d8393",
           cor2: "#c7ba98",
           cor3: "#b07f85",
-          cor4: "#32353b",
-          cor5: "#98878d",
+          cor4: "#42454b",
+          cor5: "#d7d7df",
         },
       ],
     },
@@ -49,7 +49,7 @@ export const Servicos = () => {
       ],
       cores: [
         {
-          cor2: "#e7e7ef",
+          cor2: "#d7d7df",
         },
       ],
     },
@@ -64,7 +64,7 @@ export const Servicos = () => {
       nomes: [{ nome1: "Padrão Prefeitura", nome2: "Guia Jardim" }],
       cores: [
         {
-          cor1: "#e7e7ef",
+          cor1: "#d7d7df",
         },
       ],
     },
@@ -74,8 +74,8 @@ export const Servicos = () => {
       nomes: [{ nome1: "Piso Drenante" }],
       cores: [
         {
-          cor1: "#32353b",
-          cor2: "#e7e7ef",
+          cor1: "#42454b",
+          cor2: "#d7d7df",
         },
       ],
     },
@@ -132,7 +132,8 @@ export const Servicos = () => {
                       colourStr ? (
                         <div
                           key={`${item.modelo.length * colourStr.length}`}
-                          className={`${styles.servicos_availableColour} bg-[${colourStr}]`}
+                          className={`${styles.servicos_availableColour}`}
+                          style={{ backgroundColor: colourStr }}
                         />
                       ) : null
                     )
