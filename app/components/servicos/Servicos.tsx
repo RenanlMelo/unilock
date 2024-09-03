@@ -143,7 +143,7 @@ export const Servicos = () => {
                 {item.imagens.map((image, imgIndex) =>
                   Object.values(image).map((imgSrc, subImgIndex) =>
                     imgSrc ? (
-                      <div>
+                      <div key={imgSrc + subImgIndex}>
                         <Image
                           key={`${imgIndex}-${subImgIndex}`}
                           src={imgSrc}
