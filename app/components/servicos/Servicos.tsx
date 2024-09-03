@@ -41,7 +41,7 @@ export const Servicos = () => {
     },
     {
       modelo: "Pisos Grama",
-      imagens: [{ imagem1: "/image_piso_grama.jpg" }],
+      imagens: [{ imagem1: "/grama/4.jpg" }],
       nomes: [
         {
           nome1: "Piso Grama",
@@ -119,7 +119,7 @@ export const Servicos = () => {
           {var_dictModelos.map((item, index) => (
             <div
               key={index}
-              id={item.modelo} // Adiciona o ID para o scroll
+              id={item.modelo}
               className={styles.servicos_modelo}
               style={{ gridRowStart: `${index + 1}` }}
             >

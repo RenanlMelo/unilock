@@ -63,7 +63,7 @@
       }
 
       h4 {
-        @apply text-[5vw] xl:text-[calc(1.25vw+10px)] text-center;
+        @apply text-[5vw] xl:text-[calc(1.25vw+10px)] text-center my-2;
       }
 
       span {
@@ -80,17 +80,13 @@
         div {
           @apply w-full h-full flex flex-col justify-evenly items-center;
 
-          img {
-            @apply w-full h-full aspect-square;
-          }
-
           p {
             @apply w-full text-center text-[calc(5vw)] xl:text-[calc(2vw-10px)] mt-[2vh] mb-[5vh] xl:my-[3vh];
           }
         }
 
         img {
-          @apply w-full xl:w-1/4 aspect-square rounded-md shadow-[3px_4px_30px_#10001060];
+          @apply min-h-[calc(100vw-112px)] xl:min-h-0 xl:w-full aspect-square rounded-md shadow-[3px_4px_30px_#10001060];
           transition: 0.35s all;
         }
 
