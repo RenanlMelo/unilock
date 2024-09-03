@@ -45,8 +45,9 @@ export const Form = () => {
           <div className={styles.contato_content}>
             <div className={styles.contato_informations}>
               <div>
-                <h1>Unilock Pisos Intertravados</h1>
-                <h2>Sorocaba e Região</h2>
+                <h1>Entre em contato conosco!</h1>
+                <h2>Unilock Pisos Intertravados</h2>
+                <h3>Sorocaba e Região</h3>
                 <p>
                   <a href="mailto:contato@unilockpisos.com.br">
                     Contato:
@@ -57,10 +58,10 @@ export const Form = () => {
                   Telefone: <strong>(15) 99856-8080</strong>
                 </p>
               </div>
-              <h3>
+              <h4>
                 Entre em contato conosco pelas redes sociais ou pelo formulário
                 ao lado.
-              </h3>
+              </h4>
               <div className={styles.contato_midia}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

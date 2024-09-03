@@ -19,11 +19,15 @@
   @apply xl:bg-[#101010] grid border xl:translate-y-10 border-transparent xl:border-black/50 border-r-0 justify-between items-start w-full h-fit xl:h-full p-12 gap-y-[2vh] rounded-l-2xl z-10 relative;
 
   & h1 {
-    @apply text-[7vw] xl:text-[1.5vw] text-white max-w-full;
+    @apply text-[6vw] xl:text-[1.5vw] text-black max-w-full;
   }
 
   & h2 {
-    @apply text-[4vwq] xl:text-[1.05vw] text-white max-w-full;
+    @apply text-[5vw] xl:text-[1.05vw] text-white max-w-full;
+  }
+
+  & h3 {
+    @apply text-[4vw] xl:text-[1.05vw] text-white max-w-full;
   }
 
   p {
@@ -34,7 +38,7 @@
     @apply text-[#101010] xl:text-[var(--primary)];
   }
 
-  h3 {
+  h4 {
     @apply text-white/70 text-[5vw] xl:text-[2vw] xl:text-start;
   }
 }
