@@ -155,7 +155,7 @@ export const Servicos = () => {
                           item.nomes.map((name, nIndex) =>
                             Object.values(name).map((nSrc, nSrcIndex) =>
                               nSrc && nSrcIndex === subImgIndex ? (
-                                <p>{nSrc}</p>
+                                <p key={nSrc}>{nSrc}</p>
                               ) : null
                             )
                           )
