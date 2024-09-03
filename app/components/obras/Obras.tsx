@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import styles from "./obras.module.scss";
 import Image from "next/image";
-import { getImagesFromFolder } from "@/utils/getImages";
 
 export const Obras = () => {
   const [active, setActive] = useState(-1);
@@ -28,8 +27,6 @@ export const Obras = () => {
         "/intertravado/10.jpg",
         "/intertravado/11.jpeg",
         "/intertravado/12.jpg",
-        "/intertravado/13.jpeg",
-        "/intertravado/14.jpeg",
         "/intertravado/15.jpeg",
         "/intertravado/16.jpg",
         "/intertravado/17.jpeg",
@@ -80,6 +77,7 @@ export const Obras = () => {
         "/intertravado/62.jpg",
         "/intertravado/63.png",
         "/intertravado/64.jpg",
+        "/intertravado/65.png",
       ],
     },
     {
@@ -106,6 +104,8 @@ export const Obras = () => {
         "/guia/10.jpeg",
         "/guia/11.jpg",
         "/guia/12.jpeg",
+        "/guia/13.jpg",
+        "/guia/14.jpg",
       ],
     },
     {

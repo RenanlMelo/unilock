@@ -19,21 +19,23 @@ export const Servicos = () => {
         {
           imagem1: "/intertravado/22.jpeg",
           imagem2: "/intertravado/57.jpg",
-          imagem3: "/intertravado/64.jpg",
+          imagem3: "/intertravado/65.png",
         },
       ],
       nomes: [
         {
-          nome1: "10x20",
-          nome2: "16 faces",
-          nome3: "20x20",
+          nome1: "Piso 10x20",
+          nome2: "Piso 16 faces",
+          nome3: "Piso 20x20",
         },
       ],
       cores: [
         {
-          cor1: "bg-red-600",
-          cor2: "bg-green-600",
-          cor3: "bg-blue-600",
+          cor1: "#7d8393",
+          cor2: "#c7ba98",
+          cor3: "#b07f85",
+          cor4: "#32353b",
+          cor5: "#98878d",
         },
       ],
     },
@@ -42,14 +44,12 @@ export const Servicos = () => {
       imagens: [{ imagem1: "/image_piso_grama.jpg" }],
       nomes: [
         {
-          nome1: "Pisos Grama",
+          nome1: "Piso Grama",
         },
       ],
       cores: [
         {
-          cor1: "bg-red-600",
-          cor2: "bg-green-600",
-          cor3: "bg-blue-600",
+          cor2: "#e7e7ef",
         },
       ],
     },
@@ -57,16 +57,14 @@ export const Servicos = () => {
       modelo: "Guias e Sarjetas",
       imagens: [
         {
-          imagem1: "/guia/1.jpeg",
-          imagem2: "/guia/3.jpeg",
+          imagem1: "/guia/13.jpg",
+          imagem2: "/guia/14.jpg",
         },
       ],
-      nomes: [{ nome1: "Guias", nome2: "Sarjeta" }],
+      nomes: [{ nome1: "Padrão Prefeitura", nome2: "Guia Jardim" }],
       cores: [
         {
-          cor1: "bg-red-600",
-          cor2: "bg-green-600",
-          cor3: "bg-blue-600",
+          cor1: "#e7e7ef",
         },
       ],
     },
@@ -76,9 +74,8 @@ export const Servicos = () => {
       nomes: [{ nome1: "Piso Drenante" }],
       cores: [
         {
-          cor1: "bg-red-600",
-          cor2: "bg-green-600",
-          cor3: "bg-blue-600",
+          cor1: "#32353b",
+          cor2: "#e7e7ef",
         },
       ],
     },
@@ -128,14 +125,14 @@ export const Servicos = () => {
             >
               <div className={styles.servicos_modelo_item}>
                 <h3>{item.modelo}</h3>
+                <h4>Cores Disponíveis</h4>
                 <span key={item.modelo + index}>
-                  Cores Disponíveis
                   {item.cores.map((colour, colourIndex) =>
                     Object.values(colour).map((colourStr, clrIndex) =>
                       colourStr ? (
                         <div
                           key={`${item.modelo.length * colourStr.length}`}
-                          className={`${styles.servicos_availableColour} ${colourStr}`}
+                          className={`${styles.servicos_availableColour} bg-[${colourStr}]`}
                         />
                       ) : null
                     )
@@ -143,10 +140,10 @@ export const Servicos = () => {
                 </span>
               </div>
               <div className={styles.servicos_modelo_images}>
-                <div>
-                  {item.imagens.map((image, imgIndex) =>
-                    Object.values(image).map((imgSrc, subImgIndex) =>
-                      imgSrc ? (
+                {item.imagens.map((image, imgIndex) =>
+                  Object.values(image).map((imgSrc, subImgIndex) =>
+                    imgSrc ? (
+                      <div>
                         <Image
                           key={`${imgIndex}-${subImgIndex}`}
                           src={imgSrc}
@@ -154,17 +151,19 @@ export const Servicos = () => {
                           width={500}
                           height={500}
                         />
-                      ) : null
-                    )
-                  )}
-                </div>
-                <div>
-                  {item.nomes.map((nome, nomeIndex) =>
-                    Object.values(nome).map((nomeSrc) =>
-                      nomeSrc ? <p key={nomeIndex}>{nomeSrc}</p> : null
-                    )
-                  )}
-                </div>
+                        {Object.values(
+                          item.nomes.map((name, nIndex) =>
+                            Object.values(name).map((nSrc, nSrcIndex) =>
+                              nSrc && nSrcIndex === subImgIndex ? (
+                                <p>{nSrc}</p>
+                              ) : null
+                            )
+                          )
+                        )}
+                      </div>
+                    ) : null
+                  )
+                )}
               </div>
               <div className={styles.servicos_division_2} />
             </div>
