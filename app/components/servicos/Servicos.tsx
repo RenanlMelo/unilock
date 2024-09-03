@@ -86,7 +86,7 @@ export const Servicos = () => {
       <section className={styles.servicos_section}>
         <div className={styles.servicos_title_div}>
           <h1>Serviços Oferecidos</h1>
-          <h2>Conheça mais sobre nossos modelos</h2>
+          <h2>Conheça mais sobre nossos modelos de serviços</h2>
         </div>
         <div className={styles.servicos_introduction}>
           <Image

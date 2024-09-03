@@ -11,15 +11,15 @@ export const Inicio = () => {
           src="/image_inicio_bg.jpeg"
           alt="background image"
           width={1920}
-          height={1080}
+          height={1440}
           className={styles.inicio_background_image}
           loading="eager"
         />
         <Image
           src="/image_inicio_bgMobile.jpeg"
           alt="background image"
-          width={1920}
-          height={1080}
+          width={516}
+          height={1032}
           className={styles.inicio_backgroundMobile_image}
           loading="eager"
         />
