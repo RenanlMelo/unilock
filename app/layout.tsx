@@ -11,7 +11,7 @@ const mainFontFamily = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Unilock Pisos Intertravados | Sorocaba e Região de São Paulo |",
+  title: "| Unilock Pisos Intertravados | Sorocaba e Região de São Paulo |",
   description:
     "Empresa especializada na instalação de pisos intertravados, piso grama, piso drenante, guias e sarjetas para projetos residenciais e comerciais.",
   icons: {
