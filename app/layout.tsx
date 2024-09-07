@@ -4,6 +4,7 @@ import "./globals.scss";
 import { Midia } from "../components/midia/Midia";
 import { ToTop } from "../components/pTopo/ToTop";
 import { Footer } from "../components/footer/Footer";
+import Head from "next/head";
 
 const mainFontFamily = Roboto({
   weight: ["100", "300", "500", "700", "900"],
@@ -23,7 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" type="image/x-icon" href="/favicon.png" />
+      <Head>
+        <title>Unilock Pisos Intertravados</title>
+        <meta
+          name="description"
+          content="Sorocaba e Região de São Paulo - Especializada em instalação de pisos intertravados."
+        />
+        <link rel="icon" type="image/x-icon" href="/favicon.png" />
+      </Head>
       <body className={mainFontFamily.className}>
         {children}
         <ToTop />
