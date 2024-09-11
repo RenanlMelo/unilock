@@ -6,27 +6,27 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://unilock.vercel.app/</loc>
+  <loc>https://unilockpisos.com.br/</loc>
   <lastmod>2024-09-06T03:18:53+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://unilock.vercel.app/servicos</loc>
+  <loc>https://unilockpisos.com.br/servicos</loc>
   <lastmod>2024-09-06T03:18:53+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://unilock.vercel.app/sobre</loc>
+  <loc>https://unilockpisos.com.br/sobre</loc>
   <lastmod>2024-09-06T03:18:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://unilock.vercel.app/obras</loc>
+  <loc>https://unilockpisos.com.br/obras</loc>
   <lastmod>2024-09-06T03:18:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://unilock.vercel.app/contato</loc>
+  <loc>https://unilockpisos.com.br/contato</loc>
   <lastmod>2024-09-06T03:18:53+00:00</lastmod>
   <priority>0.90</priority>
 </url>
