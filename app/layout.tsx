@@ -30,6 +30,7 @@ export default function RootLayout({
         name="google-site-verification"
         content="YtcmfZc-rl1ACXnLb-0bSN4xha0GfQXL4Rt7P6QVXiA"
       />
+      <link rel="canonical" href="https://www.unilockpisos.com.br" />
       <body className={mainFontFamily.className}>
         {children}
         <ToTop />
