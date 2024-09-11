@@ -31,8 +31,19 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Unilock Pisos Intertravados",
+              url: "https://unilockpisos.com.br/",
+            }),
+          }}
+        />
         <meta
-          name="google-site-verification"
+          name="google-site-verification "
           content="YtcmfZc-rl1ACXnLb-0bSN4xha0GfQXL4Rt7P6QVXiA"
         />
         <link rel="canonical" href="https://www.unilockpisos.com.br" />
