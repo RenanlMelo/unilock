@@ -4,6 +4,7 @@ import "./globals.scss";
 import { Midia } from "../components/midia/Midia";
 import { ToTop } from "../components/pTopo/ToTop";
 import { Footer } from "../components/footer/Footer";
+import Head from "next/head";
 
 const mainFontFamily = Roboto({
   weight: ["100", "300", "500", "700", "900"],
@@ -17,6 +18,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  alternates: {
+    canonical: "https://www.unilockpisos.com.br/",
+  },
 };
 
 export default function RootLayout({
@@ -26,11 +30,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <meta
-        name="google-site-verification"
-        content="YtcmfZc-rl1ACXnLb-0bSN4xha0GfQXL4Rt7P6QVXiA"
-      />
-      <link rel="canonical" href="https://www.unilockpisos.com.br" />
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="YtcmfZc-rl1ACXnLb-0bSN4xha0GfQXL4Rt7P6QVXiA"
+        />
+        <link rel="canonical" href="https://www.unilockpisos.com.br" />
+      </Head>
       <body className={mainFontFamily.className}>
         {children}
         <ToTop />
